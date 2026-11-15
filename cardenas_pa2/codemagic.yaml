@@ -1,0 +1,18 @@
+workflows:
+  android-apk:
+    name: APK cardenas_pa2
+    instance_type: linux_x2
+    max_build_duration: 30
+    environment:
+      java: 17
+    scripts:
+      - name: Configurar Android SDK
+        script: echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+      - name: Descargar Gradle 8.7
+        script: |
+          curl -sL https://services.gradle.org/distributions/gradle-8.7-bin.zip -o /tmp/gradle.zip
+          unzip -q /tmp/gradle.zip -d /tmp
+      - name: Compilar APK debug
+        script: /tmp/gradle-8.7/bin/gradle assembleDebug --no-daemon
+    artifacts:
+      - app/build/outputs/**/*.apk

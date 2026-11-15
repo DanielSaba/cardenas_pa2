@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">cardenas_pa2</string>
+    <string name="titulo_principal">Consultorio Médico</string>
+    <string name="subtitulo_principal">Registro de pacientes con SQLite</string>
+    <string name="titulo_registrar">Registrar paciente</string>
+    <string name="titulo_modificar">Modificar paciente</string>
+    <string name="titulo_listar">Lista de pacientes</string>
+
+    <string name="btn_registrar">Registrar paciente</string>
+    <string name="btn_modificar">Buscar / Modificar paciente</string>
+    <string name="btn_listar">Listar pacientes</string>
+    <string name="btn_salir">Cerrar aplicación</string>
+
+    <string name="hint_dni">DNI (8 dígitos)</string>
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="hint_edad">Edad</string>
+    <string name="hint_diagnostico">Diagnóstico</string>
+    <string name="hint_tratamiento">Tratamiento</string>
+    <string name="hint_buscar_dni">DNI del paciente a buscar</string>
+
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="btn_eliminar">Eliminar</string>
+
+    <string name="lista_vacia">No hay pacientes registrados todavía.</string>
+</resources>
